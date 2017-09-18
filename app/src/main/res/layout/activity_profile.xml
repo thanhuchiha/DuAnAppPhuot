@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="12">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="230"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#EA0000">
+
+        <Button
+            android:layout_marginRight="@dimen/margin_left_rigt"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/btn_back"
+            android:background="@drawable/back"
+            android:layout_width="30dp"
+            android:layout_height="30sp"
+            />
+        <TextView
+            android:id="@+id/tv_name_profile"
+            android:layout_weight="229"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_camera"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableBottom="@drawable/iconcamera"
+            android:text="Tải ảnh" />
+        <TextView
+            android:id="@+id/tv_checkin"
+            android:gravity="center"
+            android:drawableBottom="@drawable/checkin"
+            android:text="check-in"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv_cmt"
+            android:gravity="center"
+            android:drawableBottom="@drawable/iconcomment"
+            android:text="Bình luận"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv_save"
+            android:gravity="center"
+            android:drawableBottom="@drawable/save"
+            android:text="Lưu lại"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv_share"
+            android:gravity="center"
+            android:drawableBottom="@drawable/iconshare"
+            android:text="Chia sẻ"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+        <ImageView
+            android:layout_weight="5"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/dailanh"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+    <TextView
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        android:text="Mũi Đại Lãnh (Mũi Điện)"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:id="@+id/tv_number_cmt"
+            android:gravity="center"
+            android:text="số cmt"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_number_images"
+            android:gravity="center"
+            android:text="số ảnh"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_number_chechin"
+            android:gravity="center"
+            android:text="số checkin"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_number_save"
+            android:gravity="center"
+            android:text="số lưu lại"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_number_rating"
+            android:gravity="center"
+            android:text="kq đánh giá"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:drawableLeft="@drawable/checkin"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:text=" Đông Hòa, Khánh Hòa"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:src="@drawable/mapdailanh"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_detail"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="Thông tin chi tiết"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+</LinearLayout>

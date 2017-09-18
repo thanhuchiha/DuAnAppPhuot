@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#79656E"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/textViewDangKy"
+        android:layout_marginTop="70dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:text="Đăng ký"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edtEmailDK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewDangKy"
+        android:background="@drawable/drawable_shape_edt"
+        android:drawableLeft="@drawable/email_12"
+        android:hint="Địa chỉ email của bạn "
+        android:inputType="textEmailAddress"
+        android:paddingLeft="5dp"
+        android:textColor="#BBBCBD"
+        android:textColorHint="#BBBCBD"
+        android:textSize="18sp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+
+    <EditText
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/edtPassDK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edtEmailDK"
+        android:background="@drawable/drawable_shape_edt"
+        android:drawableLeft="@drawable/pass_1"
+        android:hint="Mật khẩu của bạn"
+        android:inputType="textPassword"
+        android:paddingLeft="5dp"
+        android:textColor="#BBBCBD"
+        android:textColorHint="#BBBCBD"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/edtDoublePassDK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edtPassDK"
+        android:background="@drawable/drawable_shape_edt"
+        android:drawableLeft="@drawable/pass_1"
+        android:hint="Nhập lại mật khẩu của bạn "
+        android:inputType="textPassword"
+        android:paddingLeft="5dp"
+        android:textColor="#BBBCBD"
+        android:textColorHint="#BBBCBD"
+        android:textSize="18sp" />
+
+
+    <EditText
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/edtNameDK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edtDoublePassDK"
+        android:background="@drawable/drawable_shape_edt"
+        android:drawableLeft="@drawable/user_123"
+        android:hint="Tên hiển thị"
+        android:inputType="text"
+        android:paddingLeft="5dp"
+        android:textColor="#BBBCBD"
+        android:textColorHint="#BBBCBD"
+        android:textSize="18sp" />
+    <Button
+        android:background="#ffffff"
+        android:textColor="#000000"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Đăng Ký"
+        android:layout_below="@+id/edtNameDK"
+        android:id="@+id/btnDangNhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnDangNhap"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Chúng tôi không sử dụng thông tin của bạn với bất kỳ mục đích nào khác."
+        android:textAlignment="center"
+        android:textColor="#BBBCBD"
+        android:textSize="15sp" />
+    <TextView
+
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Đăng Nhập"
+        android:textColor="#ffffff"
+        android:id="@+id/txtDangNhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/btnDangNhap"
+        android:layout_alignStart="@+id/btnDangNhap"
+        android:layout_marginBottom="10dp" />
+
+
+
+
+</RelativeLayout>

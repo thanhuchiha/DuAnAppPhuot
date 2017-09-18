@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_left_rigt">20dp</dimen>
+    <dimen name="margin_edit">5dp</dimen>
+    <dimen name="height_edit">20dp</dimen>
+    <dimen name="padding_search">10dp</dimen>
+
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="12">
+
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:weightSum="230"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#EA0000">
+
+        <Button
+            android:layout_marginRight="@dimen/margin_left_rigt"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/btn_back"
+            android:background="@drawable/back"
+            android:layout_width="30dp"
+            android:layout_height="30sp"
+             />
+
+        <EditText
+            android:drawableLeft="@drawable/search"
+            android:layout_gravity="center"
+            android:background="@drawable/edt"
+            android:layout_marginRight="@dimen/margin_left_rigt"
+            android:layout_weight="230"
+            android:layout_toRightOf="@id/btn_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:gravity="center"
+            android:textSize="20sp"
+            android:background="#ddf2dbd5"
+            android:id="@+id/tv_XemGanDay"
+            android:textAllCaps="false"
+            android:text="Xem gần đây"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:gravity="center"
+            android:textSize="20sp"
+            android:background="#ddf2dbd5"
+            android:id="@+id/tv_DatGanDay"
+            android:textAllCaps="false"
+            android:text="Đặt gần đây"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_weight="10"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></FrameLayout>
+
+</LinearLayout>
