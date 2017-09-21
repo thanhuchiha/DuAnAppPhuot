@@ -28,11 +28,17 @@ public class register extends AppCompatActivity {
         btnDangKy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if((edtNameDangNhap.length()!=0) && (nameHienThi.length()!=0)){
-                    Intent intent = new Intent(register.this,StartActitvity.class);
-                    String name = edtNameDangNhap.getText().toString();
-                    intent.putExtra("hoten",name);
-                    startActivity(intent);
+                String nameDangNhap = edtNameDangNhap.getText().toString();
+                String pass = edtPass.getText().toString();
+                String rePass = edtRePass.getText().toString();
+                String nameHien = nameHienThi.getText().toString();
+
+                if(!"".equals(nameDangNhap) && !"".equals(nameHien) && !"".equals(pass) && rePass.equals(pass)){
+                        Intent intent = new Intent(register.this, StartActitvity.class);
+                        String name = edtNameDangNhap.getText().toString();
+                        intent.putExtra("hoten", name);
+                        startActivity(intent);
+
                }else {
                     Toast.makeText(register.this,"Thông tin đăng ký không hợp lệ. Kiểm tra lại",Toast.LENGTH_LONG).show();
                 }
