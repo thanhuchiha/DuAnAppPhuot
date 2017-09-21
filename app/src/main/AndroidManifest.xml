@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".StartActitvity" />
-        <activity android:name=".register"></activity>
+        <activity android:name=".register" />
+        <activity android:name=".Comment"></activity>
     </application>
 
 </manifest>
