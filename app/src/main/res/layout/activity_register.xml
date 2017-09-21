@@ -24,8 +24,7 @@
         android:layout_below="@+id/textViewDangKy"
         android:background="@drawable/drawable_shape_edt"
         android:drawableLeft="@drawable/email_12"
-        android:hint="Địa chỉ email của bạn "
-        android:inputType="textEmailAddress"
+        android:hint="Tên đăng nhập của bạn "
         android:paddingLeft="5dp"
         android:textColor="#BBBCBD"
         android:textColorHint="#BBBCBD"
@@ -96,7 +95,7 @@
         android:layout_centerHorizontal="true"
         android:text="Đăng Ký"
         android:layout_below="@+id/edtNameDK"
-        android:id="@+id/btnDangNhap"
+        android:id="@+id/btnDangKy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
@@ -104,7 +103,7 @@
         android:id="@+id/txt2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btnDangNhap"
+        android:layout_below="@+id/btnDangKy"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:text="Chúng tôi không sử dụng thông tin của bạn với bất kỳ mục đích nào khác."
@@ -121,8 +120,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/btnDangNhap"
-        android:layout_alignStart="@+id/btnDangNhap"
+        android:layout_alignLeft="@+id/btnDangKy"
+        android:layout_alignStart="@+id/btnDangKy"
         android:layout_marginBottom="10dp" />
 
 
